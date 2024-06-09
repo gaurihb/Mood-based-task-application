@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Determination App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-page" class="container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="home-page" class="container" style="display: none;">
+        <h2>Mood Determination</h2>
+        <form id="mood-form">
+            <label for="mood">How are you feeling today?</label>
+            <select id="mood" name="mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="anxious">Anxious</option>
+                <option value="angry">Angry</option>
+                <option value="tired">Tired</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="tasks"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
